@@ -186,7 +186,7 @@
     Multi-line snackbar height: 80 dp
     Text: Roboto Regular 14 sp
     Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%
+    Default background fill: #323232 100%  
   */
     left: 0px;
     right: 0px;
@@ -214,7 +214,7 @@
   width: 160px;
   overflow: hidden;
   user-select: none;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   border-radius: 3px;
   outline-color: #a3a3a3;
@@ -231,7 +231,7 @@
   height: 100%;
   /*font-family: 'Roboto';*/
   font-size: 1em;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 .paper-button.colored,
@@ -264,13 +264,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .paper-button input[type="submit"] {
   outline-color: #a3a3a3;
 }
 .paper-button.colored.raised-button input[type="submit"] {
-  color: #ffffff;
+  color: #fff;
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -974,11 +974,7 @@ samp {
 .navbar-custom {
   background: none;
   border: none;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 3;
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
@@ -988,12 +984,12 @@ samp {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
-  color: white;
+  color: black;
   height: 56px;
   line-height: 25px;
 }
 .navbar-custom .navbar-brand:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: gray;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -1014,21 +1010,21 @@ samp {
     font-size: 20px;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: black;
     padding: 20px;
     line-height: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: gray;
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: black(18, 18, 18);
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: gray;
   }
   .navbar-custom .nav li a:active {
     background: none;
@@ -1045,7 +1041,7 @@ samp {
 }
 .navbar-custom.invert .navbar-brand:hover,
 .navbar-custom.invert .navbar-brand:focus {
-  color: #0085a1;
+  color: gray;
 }
 .navbar-custom.invert .nav li a {
   color: #404040;
@@ -1103,7 +1099,6 @@ samp {
 }
 .intro-header {
   background: no-repeat center center;
-  background-color: #a3a3a3;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1118,13 +1113,8 @@ samp {
 .intro-header.style-text .site-heading,
 .intro-header.style-text .post-heading,
 .intro-header.style-text .page-heading {
-  padding: 85px 0 20px;
+  padding: 25px 0 20px;
   color: #404040;
-}
-.intro-header.style-text .site-heading .subheading,
-.intro-header.style-text .post-heading .subheading,
-.intro-header.style-text .page-heading .subheading {
-  margin-bottom: 15px;
 }
 .intro-header.style-text .tags a,
 .intro-header.style-text .tags .tag {
@@ -1146,14 +1136,14 @@ samp {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 85px 0 55px;
-  color: white;
+  padding: 25px 0 15px;
+  color: black;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 25px 0;
   }
 }
 .intro-header .site-heading {
@@ -1161,7 +1151,7 @@ samp {
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {
-    padding: 150px 0;
+    padding: 25px 0;
   }
 }
 .intro-header .site-heading,
@@ -1212,7 +1202,6 @@ samp {
   font-size: 17px;
   line-height: 1.4;
   font-weight: normal;
-  margin: 10px 0 30px;
   margin-top: -5px;
 }
 .intro-header .post-heading .meta {
@@ -1222,7 +1211,7 @@ samp {
   font-size: 16px;
 }
 .intro-header .post-heading .meta a {
-  color: white;
+  color: black;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
@@ -1239,13 +1228,13 @@ samp {
   position: absolute;
   bottom: 6px;
   right: 9px;
-  color: white;
+  color: gray;
   opacity: 0.3;
   font-size: 10px;
   z-index: 1;
 }
 .intro-header .header-img-credit a {
-  color: white;
+  color: gray;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .header-img-credit {
@@ -1265,7 +1254,7 @@ samp {
 .post-preview > a > .post-title {
   font-size: 21px;
   line-height: 1.3;
-  margin-top: 30px;
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 .post-preview > a > .post-subtitle {
@@ -1278,7 +1267,7 @@ samp {
 .post-preview > .post-meta {
   font-family: 'Lora', 'Times New Roman', serif;
   color: #a3a3a3;
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
   margin-top: 0;
 }
@@ -1301,7 +1290,9 @@ samp {
     font-size: 16px;
   }
   .post-preview .post-meta {
-    font-size: 18px;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-style: italic;
   }
 }
 .post-content-preview {
@@ -1374,7 +1365,7 @@ footer .copyright a:focus {
 .btn-default:focus {
   background-color: #0085a1;
   border: 1px solid #0085a1;
-  color: white;
+  color: gray;
 }
 .pager {
   margin: 20px 0 0 !important;
@@ -1408,13 +1399,13 @@ footer .copyright a:focus {
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: white;
+  color: gray;
   background-color: #0085a1;
   border: 1px solid #0085a1;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
-  color: white;
+  color: gray;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -1425,21 +1416,21 @@ footer .copyright a:focus {
   cursor: not-allowed;
 }
 ::-moz-selection {
-  color: white;
+  color: gray;
   text-shadow: none;
   background: #0085a1;
 }
 ::selection {
-  color: white;
+  color: gray;
   text-shadow: none;
   background: #0085a1;
 }
 img::selection {
-  color: white;
+  color: gray;
   background: transparent;
 }
 img::-moz-selection {
-  color: white;
+  color: gray;
   background: transparent;
 }
 /* Hux add tags support */
@@ -1476,7 +1467,7 @@ img::-moz-selection {
 .tags .tag:hover,
 .tags a:active,
 .tags .tag:active {
-  color: white;
+  color: gray;
   border-color: white;
   background-color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
@@ -1509,6 +1500,8 @@ img::-moz-selection {
   margin: 0 2px;
   margin-bottom: 8px;
   background: #f3f5f5;
+  color: white;
+  font-weight: bold;
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,
@@ -1516,11 +1509,12 @@ img::-moz-selection {
 #tag_cloud .tag:active,
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
+  color: white;
   background-color: #0085a1 !important;
 }
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
-  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px;
+  text-decoration: underline;
 }
 #tag_cloud a.tag-button--all,
 #tag_cloud .tag.tag-button--all {
@@ -1592,7 +1586,7 @@ img::-moz-selection {
   right: 5px;
   bottom: 0px;
   margin: 0px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 12px;
 }
 @media only screen and (min-width: 768px) {
@@ -1607,7 +1601,7 @@ img::-moz-selection {
     font-size: 14px;
   }
   .mini-post-list .post-preview .post-meta {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 /* Tags support End*/
