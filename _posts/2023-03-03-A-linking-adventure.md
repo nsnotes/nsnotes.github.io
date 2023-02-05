@@ -149,7 +149,7 @@ int main();
 // for the `exit` system call.
 void call_exit(int code, int exit_syscall_num) {
 	asm("mov %rsi, %rax;"  // Copy syscall number into %rax
-	    "syscall;");       // exit's arg is already in %rsi
+	    "syscall;");       // exit's arg is already in %rdi
 }
 
 void _start() { call_exit(main(), SYS_exit); }
